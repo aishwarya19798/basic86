@@ -1,0 +1,32 @@
+.articles{
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+}
+
+.articles div{
+	margin-bottom: 30px;
+}
+.articles div h3{
+	color: darkgray;
+	font-size:1.2em;
+	line-height: 2em;
+	margin-bottom: 5px;
+}
+
+.articles div div {
+	background-color: black;
+	height: 80px;
+	width: 80px;
+	border:1px solid black;
+	margin: 10px;
+	float: left;
+}
+.articles div p{
+	color: darkgray;
+}
+.articles div a{
+	text-decoration: none;
+	color: orange;
+	float: right;
+}
