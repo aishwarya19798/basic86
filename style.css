@@ -1,28 +1,30 @@
-*{
+* {
 	padding: 0px;
 	margin: 0px;
 	box-sizing: border-box;
 }
-.hide-mobile
-{
+
+.hide-mobile {
 	display: none;
 }
-.menu-links{
-	position: absolute;
+
+.menu-links {
+	position: fixed;
 	display: flex;
-	font-size: 40px;	
+	font-size: 40px;
 	z-index: 100;
 	top: 0px;
 	right: 0px;
 	flex-direction: column;
 	padding: 80px 10px 0px;
-	height: 60%;
-	width: 40%;
-	background-color:#262626;
+	height: 100%;
+	width: 60%;
+	background-color: #262626;
 	line-height: 1.5em;
-	align-items:center;
-	}
-nav{
+	align-items: center;
+}
+
+nav {
 	display: flex;
 	background-color: #262626;
 	color: darkgray;
@@ -32,19 +34,72 @@ nav{
 	align-items: center;
 	justify-content: space-between;
 }
-nav div h1{
+
+nav div h1 {
 	font-size: 35px;
 	font-weight: normal;
 }
-nav div h2{
+
+nav div h2 {
 	font-size: 15px;
 	font-weight: normal;
 }
-nav div a{
+
+nav div a {
 	text-decoration: none;
 	color: darkgray;
 	font-size: 15px;
 }
-nav div i{
+
+nav div i {
 	font-size: 30px;
+}
+
+@media only screen and (min-width:688px) {
+	.menu-links {
+		width: 50%;
+	}
+	nav{
+		padding: 20px 40px;
+	}
+}
+
+@media only screen and (min-width:942px) {
+	.menu-links {
+		width: 30%;
+	}
+	nav{
+		padding: 20px 50px;
+	}
+}
+
+@media only screen and (min-width:1075px) {
+	.hide-desktop {
+		display: none;
+	}
+
+	.hide-mobile {
+		display: unset;
+	}
+
+	.menu-links {
+		position: unset;
+		display: flex;
+		font-size: 40px;
+		z-index: 100;
+		top: 0px;
+		right: 0px;
+		flex-direction: row;
+		padding: 0px 10px 0px;
+		height: 100%;
+		width: 100%;
+		background-color: #4e4e4e;
+		line-height: 1.5em;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.menu-links a {
+		margin: 0 10px;
+	}
 }

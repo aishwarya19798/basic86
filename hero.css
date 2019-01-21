@@ -37,3 +37,44 @@
 	color: orange;
 	float: right;
 }
+@media only screen and (min-width:688px) {
+	.hero {
+		margin: 0 30px;
+	}
+}
+
+@media only screen and (min-width:942px) {
+	.hero {
+		margin: 0px 40px;
+	}
+	.hero div:last-child{
+		height:500px;
+		margin-bottom: 20px;
+	}
+}
+
+@media only screen and (min-width:1075px) {
+	.hero{
+		display:flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		margin-top: 10px;
+	}
+	.hero div:last-child{
+		height:250px;
+		margin-right: 20px;
+		margin-bottom: 0;
+	}
+	.hero div {
+		display: flex;
+		align-items: flex-start;
+		justify-content: center;
+		flex-direction: column;
+		height: 250px;
+		padding: 20px;
+	}
+	.hero div a {
+		align-self: flex-end;
+	}
+}
