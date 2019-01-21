@@ -30,3 +30,27 @@
 	color: orange;
 	float: right;
 }
+@media only screen and (min-width:688px) {
+	.articles {
+		margin: 0 30px;
+	}
+}
+
+@media only screen and (min-width:942px) {
+	.articles {
+		margin: 0px 40px;
+	}
+}
+
+@media only screen and (min-width:1075px) {
+	.articles{
+		display:flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		margin-top:-20px;
+	}
+	.articles div {
+		margin: 0px 30px;
+	}
+}

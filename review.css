@@ -28,3 +28,30 @@
 	color:orange;
 	float: right;
 }
+@media only screen and (min-width:688px) {
+	.review {
+		margin: 0 30px;
+	}
+}
+
+@media only screen and (min-width:942px) {
+	.review {
+		margin: 0px 40px;
+	}
+}
+
+@media only screen and (min-width:1075px) {
+	.review {
+		display:flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		margin-top:30px;
+	}
+	.review div {
+		margin: 0px 30px;
+	}
+	.review div div {
+		width:100%;
+	}
+}
